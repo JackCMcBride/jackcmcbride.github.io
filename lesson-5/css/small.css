@@ -112,22 +112,6 @@ nav ul {
     display: none;
 }
 
-nav ul li {
-    flex: 1;
-
-}
-
-nav ul li a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-
 main h2,
 main h3 {
     color: #143DCC;
