@@ -26,6 +26,18 @@ img {
 
 }
 
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
 header {
     color: #FFF;
     background-color: #00BFFF;
@@ -91,17 +103,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    font-size: 18pt;
-}
 
-h2 {
-    font-size: 16pt;
-}
-
-h3 {
-    font-size: 14pt;
-}
 
 main h2,
 main h3 {
@@ -113,15 +115,30 @@ main figure {
     width: 100%;
     position: relative;
     background-color: #00BFFF;
-    /*
-    margin: 0 0 .2rem 2%;
-    width: 96%;
-*/
+
 }
 
-main figure img {
+.hero-image {
+    background-image: url("../images/mountains.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    width: 100%;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.hero-text h1 {
+    font-size: 24pt;
 }
 
 .city-container {
@@ -149,7 +166,7 @@ main figure img {
 }
 
 .weather-icon {
-    height: 300px;
+    height: 200px;
     width: auto;
     margin-left: 25px;
 }
