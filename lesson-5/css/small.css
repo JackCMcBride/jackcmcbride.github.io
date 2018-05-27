@@ -48,11 +48,16 @@ header {
     justify-content: center;
 }
 
-.header-text-container,
+.header-text-container {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: left;
+    padding-left: 25px
+}
+
 .header-image-container {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    text-align: left;
 }
 
 header img {
@@ -80,13 +85,31 @@ nav {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav button {
+    background-color: inherit;
+    color: #FFF;
     display: flex;
     align-items: center;
-    justify-content: center;
+    border: none;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+nav .hamburger-container,
+span {
+    margin-left: 10px;
+
+}
+
+nav .hamburger {
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 3px 0;
+}
+
+nav ul {
+    display: none;
 }
 
 nav ul li {
