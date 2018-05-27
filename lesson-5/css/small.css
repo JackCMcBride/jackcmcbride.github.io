@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: grey;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Myriad Pro", sans-serif;
+    background-color: #FFF;
+    margin: auto;
+}
+
+p {
+    font-size: 12pt;
+}
+
+main p {
+    font-family: "Times", serif;
+}
+
+img {
+    width: 100%;
+
+}
+
+header {
+    color: #FFF;
+    background-color: #00BFFF;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text-container,
+.header-image-container {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header h1 {
+    text-shadow: 2px 2px #3D5299;
+    font-size: 24pt;
+}
+
+header .subheading {
+    font-style: italic;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+nav {
+    font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #3D5299;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    flex: 1;
+
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+main h2,
+main h3 {
+    color: #143DCC;
+}
+
+main figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background-color: #00BFFF;
+    /*
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+*/
+}
+
+main figure img {
+    position: relative;
+    width: 100%;
+}
+
+.city-container {
+    text-align: center;
+    height: 100px;
+    background-color: #00BFFF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-container,
+.weather-icon-container,
+.history-container {
+    padding: 15px;
+}
+
+.weather-container {}
+
+.weather-icon-container {}
+
+.forecast-container {
+    display: none;
+}
+
+.weather-icon {
+    height: 300px;
+    width: auto;
+    margin-left: 25px;
+}
+
+.history-container img {
+    border-radius: 25px;
+}
+
+footer {
+    font-size: 10pt;
+    background-color: #CC3C14;
+    color: #FFF;
+    padding: 25px;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FFF;
+}
+
+footer h3 {
+    margin-bottom: 1px;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}

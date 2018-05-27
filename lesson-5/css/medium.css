@@ -1,0 +1,55 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    nav button {
+        display: none;
+    }
+
+    .forecast-container {
+        display: block;
+    }
+
+    .forecast-container table {
+        width: 100%;
+        text-align: center;
+        border: 2px solid #00BFFF;
+        border-spacing: 0;
+        height: 150px;
+    }
+
+    .forecast-container th {
+        background-color: #00BFFF;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .forecast-container .day {
+        background-color: #3D5299;
+        color: white;
+    }
+
+    .weather-container,
+    .weather-icon-container {
+        flex: 1;
+    }
+
+    .todays-weather,
+    footer aside {
+        display: flex;
+    }
+
+    .history-container img {
+        border-radius: 25px;
+        height: 150px;
+        width: auto;
+        float: right;
+        margin: 5px;
+    }
+
+
+    footer aside .address,
+    .phone-email {
+        flex: 1;
+    }
+
+}
