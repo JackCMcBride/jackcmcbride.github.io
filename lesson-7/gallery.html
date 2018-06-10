@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="True Weather Gallery Page">
+    <title>True Weather Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-image-container">
+            <img src="images/logo.png" alt="True Weather Logo">
+        </div>
+        <div class="header-text-container">
+            <h1>True Weather</h1>
+            <h2 class="subheading">Weather you can Trust</h2>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">
+            &#9776; Menu
+        </button>
+        <ul id="nav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="gallery-main">
+        <h1>Gallery</h1>
+        <div class="figure-container">
+            <figure>
+                <img src="./images/gallery/web-sunny.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/gallery/web-overcast.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/gallery/web-fog.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/gallery/web-rain.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/gallery/web-lightning.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/gallery/web-snow.jpg" alt="">
+                <figcaption>Awesome Picture</figcaption>
+            </figure>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <aside>
+            <div class="address">
+                <section>
+                    <h3>Address:</h3>
+                    <p>The Weather Center</p>
+                    <p>123 Main Street</p>
+                    <p>Franklin, MI 87654</p>
+                </section>
+            </div>
+            <div class="phone-email">
+                <section>
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                </section>
+
+                <section>
+                    <h3>Email:</h3>
+                    <p><a href="mailto:info@jackcmcbride.github.io">info@jackcmcbride.github.io</a></p>
+                </section>
+            </div>
+        </aside>
+        <div class="copyright">
+            <p class="footer-bar">&copy; <span id="day"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span> &loz; All rights reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>
