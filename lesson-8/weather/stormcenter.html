@@ -41,36 +41,36 @@
     <main id="stormcenter-main">
 
         <form action="/jackcmcbride.github.io/lesson-8/weather//thanks.html">
-            <h1>Storm Center</h1>
+            <h1>Storm Form: Tell us about your storm.</h1>
 
             <fieldset>
                 <label for="fullName">Full Name</label>
-                <input required name="fullName" type="text" pattern="[a-zA-Z ]{5,}">
+                <input id="fullName" required name="fullName" type="text" pattern="[a-zA-Z ]{5,}">
             </fieldset>
 
             <fieldset>
                 <label for="email">Email</label>
-                <input placeholder="email@example.com" name="email" type="email">
+                <input id="email" placeholder="email@example.com" name="email" type="email">
             </fieldset>
 
             <fieldset>
                 <label for="phone">Phone Number</label>
-                <input required name="phone" type="tel">
+                <input id="phone" required name="phone" type="tel">
             </fieldset>
 
             <fieldset>
                 <label for="zip">Zip Code</label>
-                <input required name="zip" type="number">
+                <input id="zip" required name="zip" type="number">
             </fieldset>
 
             <fieldset>
-                <label for="date">Storm Date</label>
-                <input name="date" type="date">
+                <label for="stormDate">Storm Date</label>
+                <input id="stormDate" name="stormDate" type="date">
             </fieldset>
 
             <fieldset>
                 <label for="type">Storm Type</label>
-                <input name="type" list="types">
+                <input id="type" name="type" list="types">
                 <datalist id="types">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -81,13 +81,13 @@
             </fieldset>
 
             <fieldset>
-                <label for="severity">Storm Severity: <span id="severity"></span></label>
-                <input name="severity" type="range" min='1' max='10' onchange="updateTextInput(this.value);">
+                <label for="stormSeverity">Storm Severity: <span id="severity"></span></label>
+                <input id="stormSeverity" name="stormSeverity" type="range" min='1' max='10' onchange="updateTextInput(this.value);">
             </fieldset>
 
             <fieldset>
                 <label for="stormRegion">Storm Region</label>
-                <select name="stormRegion">
+                <select id="stormRegion" name="stormRegion">
                 <option disabled selected="selected" value="">Select Region ...</option>
                 <option value="franklin">Franklin</option>
                 <option value="greenville">Greenville</option>
@@ -96,7 +96,7 @@
             </fieldset>
 
             <fieldset>
-                <label for="dangerLevel">Are you in Danger?</label>
+                <label>Are you in Danger?</label>
                 <div class="radio">
                     <input id="dangerChoice1" name="dangerLevel" type="radio">
                     <label for="dangerChoice1">Yes</label>
@@ -114,7 +114,7 @@
 
             <fieldset>
                 <label for="comments">Comments</label>
-                <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
             </fieldset>
 
             <div class="button-container">

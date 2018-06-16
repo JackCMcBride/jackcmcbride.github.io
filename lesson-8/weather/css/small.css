@@ -202,7 +202,7 @@ footer .copyright {
     width: 100%;
 }
 
-form div label {
+fieldset label {
     font-weight: bold;
     transition: font-size .2s;
 
