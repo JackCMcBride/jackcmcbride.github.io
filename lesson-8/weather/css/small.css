@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: grey;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF;
+    margin: auto;
+}
+
+p {
+    font-size: 12pt;
+}
+
+main p {
+    font-family: "Times", serif;
+}
+
+img {
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+header {
+    color: #FFF;
+    background-color: #00BFFF;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text-container {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: left;
+    padding-left: 25px
+}
+
+.header-image-container {
+    text-align: left;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header h1 {
+    text-shadow: 2px 2px #3D5299;
+    font-size: 24pt;
+}
+
+header .subheading {
+    font-style: italic;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+nav {
+    font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #3D5299;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: #FFF;
+}
+
+.hide {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main h2,
+main h3 {
+    color: #143DCC;
+}
+
+.hero-photo {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background-color: #00BFFF;
+
+}
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.hero-text h1 {
+    font-size: 24pt;
+}
+
+.city-container {
+    text-align: center;
+    height: 100px;
+    background-color: #00BFFF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-container,
+.weather-icon-container,
+.history-container {
+    padding: 15px;
+}
+
+.weather-container {}
+
+.weather-icon-container {}
+
+.forecast-container {
+    display: none;
+}
+
+.weather-icon {
+    height: 200px;
+    width: auto;
+    margin-left: 25px;
+}
+
+.history-container img {
+    border-radius: 25px;
+}
+
+footer {
+    font-size: 10pt;
+    background-color: #CC3C14;
+    color: #FFF;
+    padding: 25px;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FFF;
+}
+
+footer h3 {
+    margin-bottom: 1px;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+#stormcenter-main form {
+    padding: 25px;
+    width: 100%;
+}
+
+form div label {
+    font-weight: bold;
+    transition: font-size .2s;
+
+}
+
+fieldset {
+    border: none;
+}
+
+form fieldset input,
+form fieldset textarea,
+form fieldset select {
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: ridge;
+    width: 100%;
+    padding: 5px;
+}
+
+fieldset:focus-within > label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+form select {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%
+}
+
+form .radio label,
+form .radio input {
+    width: auto;
+    display: inline;
+}
+
+form button {
+    background-color: #3D5299;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    box-shadow: 1px 1px 5px gray;
+    transition: .25s;
+}
+
+form button:hover {
+    background-color: white;
+    color: #3D5299;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#gallery-main {
+    text-align: center;
+}
+
+#gallery-main .figure-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+#thanks-main {
+    padding: 100px;
+}
+
+.figure-container figure {
+    padding: 5px;
+    background-color: #00BFFF;
+    color: white;
+    transition: .5s;
+}
