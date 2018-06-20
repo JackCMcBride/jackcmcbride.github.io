@@ -1,0 +1,28 @@
+body {
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 25px;
+}
+
+article {
+    text-align:
+}
+
+h1,
+h2 {
+    font-family: 'Bangers', cursive;
+}
+
+header p {
+    font-weight: bold;
+}
