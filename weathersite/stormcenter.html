@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="True Weather Gallery Page">
+    <title>True Weather Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+     <header includefile="header.html"></header>
+    <nav includefile="nav.html" class="clearfix"></nav>
+
+    <main id="stormcenter-main">
+
+        <form action="/jackcmcbride.github.io/lesson-8/weather//thanks.html">
+            <h1>Storm Form: Tell us about your storm.</h1>
+
+            <fieldset>
+                <label for="fullName">Full Name</label>
+                <input id="fullName" required name="fullName" type="text" pattern="[a-zA-Z ]{5,}">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email</label>
+                <input id="email" placeholder="email@example.com" name="email" type="email">
+            </fieldset>
+
+            <fieldset>
+                <label for="phone">Phone Number</label>
+                <input id="phone" required name="phone" type="tel">
+            </fieldset>
+
+            <fieldset>
+                <label for="zip">Zip Code</label>
+                <input id="zip" required name="zip" type="number">
+            </fieldset>
+
+            <fieldset>
+                <label for="stormDate">Storm Date</label>
+                <input id="stormDate" name="stormDate" type="date">
+            </fieldset>
+
+            <fieldset>
+                <label for="type">Storm Type</label>
+                <input id="type" name="type" list="types">
+                <datalist id="types">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <label for="stormSeverity">Storm Severity: <span id="severity"></span></label>
+                <input id="stormSeverity" name="stormSeverity" type="range" min='1' max='10' onchange="updateTextInput(this.value);">
+            </fieldset>
+
+            <fieldset>
+                <label for="stormRegion">Storm Region</label>
+                <select id="stormRegion" name="stormRegion">
+                <option disabled selected="selected" value="">Select Region ...</option>
+                <option value="franklin">Franklin</option>
+                <option value="greenville">Greenville</option>
+                <option value="springfield">Springfield</option>
+               </select>
+            </fieldset>
+
+            <fieldset>
+                <label>Are you in Danger?</label>
+                <div class="radio">
+                    <input id="dangerChoice1" name="dangerLevel" type="radio">
+                    <label for="dangerChoice1">Yes</label>
+                </div>
+                <div class="radio">
+                    <input id="dangerChoice2" name="dangerLevel" type="radio">
+                    <label for="dangerChoice2">No</label>
+                </div>
+                <div class="radio">
+                    <input id="dangerChoice3" name="dangerLevel" type="radio">
+                    <label for="dangerChoice3">Maybe</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </main>
+
+       <footer includefile="footer.html"></footer>
+
+
+    <script src="js/includes.js"></script>
+    <script src="js/severity.js"></script>
+
+</body>
+
+</html>

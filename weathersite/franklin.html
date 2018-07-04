@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="True Weather City Page for Franklin ">
+    <title>Franklin Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+    <header includefile="header.html"></header>
+    <nav includefile="nav.html" class="clearfix"></nav>
+
+    <main>
+        <figure class="hero-photo">
+            <img src="images/franklin-1028-min.jpg" alt="franklin" sizes="100vw" srcset="images/franklin-600-min.jpg 600w,
+                    images/franklin-1028-min.jpg 1028w">
+
+            <div class="hero-text">
+                <h1>Franklin</h1>
+            </div>
+
+        </figure>
+        <section class="todays-weather">
+            <div class="weather-container">
+                <h2>Today's Weather</h2>
+                <ul>
+                    <li>High: 90&deg;</li>
+                    <li>Low: <span id="temp">49</span>&deg;</li>
+                    <li>Chance of Precipitation: 0%</li>
+                    <li>Wind: <span id="wind">20</span>mph from the South West</li>
+                    <li>Windchill: <span id="windchill"></span>&deg;</li>
+                </ul>
+            </div>
+            <div class="weather-icon-container">
+                <h2>Partly Cloudy</h2>
+                <img class="weather-icon" src="images/partly-cloudy.png" alt="Partly Cloudy">
+            </div>
+        </section>
+        <section class="forecast-container">
+            <h2>Forecast Details</h2>
+            <table>
+                <tr>
+                    <th colspan="10">10 Day Forecast</th>
+                </tr>
+                <tr class="day">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr class="temp">
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>78&deg;F</td>
+                    <td>75&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>79&deg;F</td>
+                    <td>83&deg;F</td>
+                    <td>85&deg;F</td>
+                    <td>89&deg;F</td>
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <div class="history-container">
+                <h2>This day in History</h2>
+                <img src="images/history.jpg" alt="Knight riding horse">
+
+                <p>On this day in history we're sure that at some point, a knight was probably riding his horse somewhere probably very far from here. Chances are he was holding a sword, because they didn't call it the dark ages for nothing. I mean let's be real, it was probably cloudy too, because England.</p>
+                <p>At first I thought it was a unicorn. Just look at that horse's ear. You see it, right? I wonder if he's comfortable with that parachute of a shirt on. Certainly not comfortable with a fully-armored knight chilling on his back. Talk about needing a chiropractor.</p>
+                <p>That's all I got. Lorem Ipsum would have probably been easier. I mean, Latin is historical, right?</p>
+            </div>
+        </section>
+    </main>
+
+    <footer includefile="footer.html"></footer>
+
+    <script src="js/includes.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+
+</html>
