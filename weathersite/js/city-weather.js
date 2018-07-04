@@ -1,9 +1,9 @@
 const greenvilleID = '4469160';
 const franklinID = '4156210';
 const springfieldID = '4951788';
-const imgPath = 'http://openweathermap.org/img/w/';
+const imgPath = 'https://openweathermap.org/img/w/';
 const imgTag = '.png';
-const currentWeatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=';
+const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=';
 const APIKey = '&APPID=43316cb587d40d9655e6a6c098281d01';
 const options = '&units=imperial';
 
