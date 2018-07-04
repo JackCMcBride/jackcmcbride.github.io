@@ -15,31 +15,112 @@
 
 <body>
 
-     <header includefile="header.html"></header>
-    <nav includefile="nav.html" class="clearfix"></nav>
+    <header>
+        <div class="header-image-container">
+            <img src="images/logo.png" alt="True Weather Logo">
+        </div>
+        <div class="header-text-container">
+            <h1>True Weather</h1>
+            <h2 class="subheading">Weather you can Trust</h2>
+        </div>
+    </header>
+    <nav class=" clearfix"><button onclick="toggleMenu()">
+            &#9776; Menu
+        </button>
+        <ul id="nav" class="hide">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./franklin.html">Franklin</a></li>
+            <li><a href="./greenville.html">Greenville</a></li>
+            <li><a href="./springfield.html">Springfield</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
 
-    <main>
-        <section>
-            <div>
+    </nav>
+    <main id="home-main">
+        <section id="story">
+            <div class="story">
                 <h1>Weather Story</h1>
-                <p>A story about weather.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie maximus mi at rhoncus. Donec sit amet luctus justo. Ut vulputate sem vel diam bibendum, vel porttitor mauris varius. Cras malesuada vulputate fringilla. Maecenas efficitur neque vel ante viverra euismod. Sed in ligula justo. Praesent nulla ante, scelerisque scelerisque ultricies id, finibus molestie sapien. Nullam velit tellus, dictum luctus nulla in, blandit vehicula diam. Aliquam erat volutpat. Suspendisse potenti. Proin vel est lacinia, ullamcorper mauris vel, posuere felis. Cras sit amet iaculis risus.</p>
             </div>
-            <div>
-                <figure class="hero-photo">
-                    <img src="images/franklin-1028-min.jpg" alt="franklin" sizes="100vw" srcset="images/franklin-600-min.jpg 600w,
-                    images/franklin-1028-min.jpg 1028w">
-                </figure>
+            <div class="story-image">
+                <img src="images/gallery/web-lightning.jpg" alt="franklin">
             </div>
         </section>
-        <section>
+        <section class="cities hide">
+            <div>
 
+                <div class="story">
+                    <h1>Franklin City</h1>
+                    <h2 id="franklin-motto"></h2>
+                    <p>Founded: <span id="franklin-year-founded"></span></p>
+                    <p>Population: <span id="franklin-population"></span></p>
+                    <p>Annual Rainfall: <span id="franklin-annual-rainfall"></span></p>
+                </div>
+                <div class="story-image">
+                    <img src="images/franklin-600-min.jpg" alt="franklin">
+                </div>
+
+            </div>
+            <div>
+                <div class="story">
+                    <h1>Greenville City</h1>
+                    <h2 id="greenville-motto"></h2>
+                    <p>Founded: <span id="greenville-year-founded"></span></p>
+                    <p>Population: <span id="greenville-population"></span></p>
+                    <p>Annual Rainfall: <span id="greenville-annual-rainfall"></span></p>
+                </div>
+                <div class="story-image">
+                    <img src="images/gallery/web-fog.jpg" alt="greenville">
+                </div>
+            </div>
+            <div>
+
+                <div class="story">
+                    <h1>Springfield City</h1>
+                    <h2 id="springfield-motto"></h2>
+                    <p>Founded: <span id="springfield-year-founded"></span></p>
+                    <p>Population: <span id="springfield-population"></span></p>
+                    <p>Annual Rainfall: <span id="springfield-annual-rainfall"></span></p>
+                </div>
+                <div class="story-image">
+                    <img src="images/gallery/web-rain.jpg" alt="springfield">
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer includefile="footer.html"></footer>
+    <footer>
+        <aside>
+            <div class="address">
+                <section>
+                    <h3>Address:</h3>
+                    <p>The Weather Center</p>
+                    <p>123 Main Street</p>
+                    <p>Franklin, MI 87654</p>
+                </section>
+            </div>
+            <div class="phone-email">
+                <section>
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                </section>
 
-    <script src="js/includes.js"></script>
-   
+                <section>
+                    <h3>Email:</h3>
+                    <p><a href="mailto:info@jackcmcbride.github.io">info@jackcmcbride.github.io</a></p>
+                </section>
+            </div>
+        </aside>
+        <div class="copyright">
+            <p class="footer-bar">&copy; <span id="day"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span> &loz; All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/town.js"></script>
+
 
 </body>
 

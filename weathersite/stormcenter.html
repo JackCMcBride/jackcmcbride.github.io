@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="True Weather Gallery Page">
-    <title>True Weather Gallery</title>
+    <meta name="description" content="True Weather Stormcenter Page">
+    <title>True Weather Storm Center</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
@@ -15,12 +15,31 @@
 
 <body>
 
-     <header includefile="header.html"></header>
-    <nav includefile="nav.html" class="clearfix"></nav>
+    <header>
+        <div class="header-image-container">
+            <img src="images/logo.png" alt="True Weather Logo">
+        </div>
+        <div class="header-text-container">
+            <h1>True Weather</h1>
+            <h2 class="subheading">Weather you can Trust</h2>
+        </div>
+    </header>
+    <nav class=" clearfix"><button onclick="toggleMenu()">
+            &#9776; Menu
+        </button>
+        <ul id="nav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./franklin.html">Franklin</a></li>
+            <li><a href="./greenville.html">Greenville</a></li>
+            <li><a href="./springfield.html">Springfield</a></li>
+            <li class="active"><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
 
+    </nav>
     <main id="stormcenter-main">
 
-        <form action="/jackcmcbride.github.io/lesson-8/weather//thanks.html">
+        <form action="thanks.html">
             <h1>Storm Form: Tell us about your storm.</h1>
 
             <fieldset>
@@ -104,11 +123,35 @@
         </form>
 
     </main>
+    <footer>
+        <aside>
+            <div class="address">
+                <section>
+                    <h3>Address:</h3>
+                    <p>The Weather Center</p>
+                    <p>123 Main Street</p>
+                    <p>Franklin, MI 87654</p>
+                </section>
+            </div>
+            <div class="phone-email">
+                <section>
+                    <h3>Phone:</h3>
+                    <p>(801) 555-1234</p>
+                </section>
 
-       <footer includefile="footer.html"></footer>
+                <section>
+                    <h3>Email:</h3>
+                    <p><a href="mailto:info@jackcmcbride.github.io">info@jackcmcbride.github.io</a></p>
+                </section>
+            </div>
+        </aside>
+        <div class="copyright">
+            <p class="footer-bar">&copy; <span id="day"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span> &loz; All rights reserved</p>
+        </div>
+    </footer>
 
-
-    <script src="js/includes.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
     <script src="js/severity.js"></script>
 
 </body>

@@ -111,7 +111,7 @@ nav ul li a {
 
 main h2,
 main h3 {
-    color: #143DCC;
+    color: #CC3C14;
 }
 
 .hero-photo {
@@ -161,8 +161,8 @@ main h3 {
     display: none;
 }
 
-.weather-icon {
-    height: 200px;
+#weather-icon {
+    height: 75px;
     width: auto;
     margin-left: 25px;
 }
@@ -286,4 +286,40 @@ form button:hover {
     background-color: #00BFFF;
     color: white;
     transition: .5s;
+}
+
+#home-main img {
+    width: 100%;
+}
+
+#home-main #story {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+#home-main .story {
+
+    background-color: white;
+    padding: 10px;
+}
+
+#home-main .story h1 {
+    color: #3D5299;
+    text-align: center
+}
+
+
+
+nav ul li.active > a {
+    background-color: #CC3C14;
+    /*        color: #00BFFF;*/
+    /*        font-size: 1.5em;*/
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
