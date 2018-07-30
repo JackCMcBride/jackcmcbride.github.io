@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.black-back {
+    background-color: black;
+}
+
+.black-back h1,
+.black-back h2,
+.black-back h3 {
+    font-family: 'Graduate', sans-serif;
+    text-align: center;
+}
+
+
+.bg {
+    background-image: url("../images/bike_optimized.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fade {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.center img {
+    height: 350px;
+}
+
+
+
+
+nav {
+
+    font-family: 'Graduate', sans-serif;
+    width: 100%;
+    font-size: 10pt;
+    position: fixed;
+
+}
+
+
+.sticky nav {
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.home nav {
+    bottom: 50px;
+
+}
+
+
+.sticky header {
+    padding-bottom: 105px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+.hide,
+.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul li.active > a {
+    color: #24c6fc;
+
+}
+
+nav ul li a {
+    border-bottom: solid transparent 2px;
+    transition: 1s;
+
+}
+
+nav ul li a:hover {
+    border-bottom: solid white 2px;
+
+}
+
+a img,
+button img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+nav {
+    text-align: center;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+table {
+
+    width: 300px;
+    margin: auto;
+    border-spacing: 1px;
+    background-color: black;
+}
+
+tbody {
+    color: black;
+    font-family: serif;
+}
+
+th,
+td {
+    padding: .5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d9d9d9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #8f8f8f;
+}
+
+thead {
+    font-size: 1.1rem;
+    font-family: "Graduate", sans-serif;
+
+}
+
+thead tr:first-child {
+    font-size: 1.75rem
+}
+
+thead {
+    background-color: #24c6fc;
+    color: white;
+}
+
+main {
+    background-color: #d9d9d9;
+    padding: 15px;
+}
+
+
+
+form {
+    padding: 25px;
+    width: 100%;
+}
+
+fieldset label {
+    font-weight: bold;
+    transition: font-size .2s;
+
+}
+
+fieldset {
+    border: none;
+}
+
+form fieldset input,
+form fieldset textarea,
+form fieldset select {
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: ridge;
+    width: 100%;
+    padding: 5px;
+}
+
+fieldset:focus-within > label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+form select {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%
+}
+
+form .radio label,
+form .radio input {
+    width: auto;
+    display: inline;
+}
+
+form button,
+.slide-button {
+    background-color: #d9d9d9;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    box-shadow: 1px 1px 5px gray;
+    transition: .25s;
+}
+
+.slide-button {
+    background-color: #24c6fc;
+}
+
+form button:hover,
+.slide-button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.event {
+    background-color: white;
+    padding: 15px;
+}
+
+.event-divider img {
+    width: 100%;
+    border: 15px solid black;
+}
+
+form {
+    background-color: #24c6fc;
+}
+
+.map-container {
+    border: 26px solid black;
+
+}
+
+.contact-info {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: black;
+    color: white;
+}
+
+a,
+a:focus,
+a:active {
+    color: white;
+}
+
+.contact-info a:hover {
+    color: #24c6fc;
+}
+
+.repair-img-container img {
+    width: 100%;
+    border: 15px solid black;
+}
+
+.repair-img-container {
+    text-align: center;
+}
+
+
+.sales section img {
+    width: 100%;
+}
+
+.adventure {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.sales .details {
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.sales .details h1 {
+    color: #24c6fc;
+    text-align: center
+}
+
+.event-details {
+    font-family: 'Graduate', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100% !important;
+}
+
+.slideshow {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.home nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.home nav ul li {
+    text-align: center;
+    flex: 1;
+
+}
+
+.home nav ul li a {
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+video {
+    width: 100%;
+}

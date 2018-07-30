@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Spoke Services">
+    <title>The Mountain Spoke - Services</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+</head>
+
+<body class="sticky services black-back">
+    <header>
+        <nav>
+            <button onclick="toggleMenu()"><img src="./images/logo.png" alt="The Mountain Spoke"> Menu</button>
+            <ul id="nav" class="hide">
+                <li class="hide"><a href="./index.html"><img src="./images/logo.png" alt="The Mountain Spoke"></a></li>
+                <li class="show"><a href="./index.html">Welcome</a></li>
+                <li><a href="./adventure.html">Adventure</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./sales.html">Bikes</a></li>
+                <li class="active"><a href="./service.html">Service</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>The Mountain Spoke Repair Services</h1>
+
+
+        <div class="grid-container">
+
+            <div class="repair-img-container">
+
+                <img src="./images/bike_repair_optimized.JPG" alt="Bike Repair">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="dark">Service</th>
+                        <th class="dark">Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <h2>Call to make an appointment. Walk ins welcome on a first come first serve basis</h2>
+
+    </main>
+    <footer class="grid-container"><a class="contact-info" href="./references.html">Resources</a><a class="contact-info" href="./video.html">Video</a></footer>
+    <script src="./data/services.json"></script>
+    <script src="js/services.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+
+
+</html>

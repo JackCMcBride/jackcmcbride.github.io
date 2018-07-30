@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Spoke Sales">
+    <title>The Mountain Spoke - Sales</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body class="sticky sales black-back">
+    <header>
+        <nav>
+   <button onclick="toggleMenu()"><img src="./images/logo.png" alt="The Mountain Spoke"> Menu</button>            <ul id="nav" class="hide">
+                <li class="hide"><a href="./index.html"><img src="./images/logo.png" alt="The Mountain Spoke"></a></li>
+                <li class="show"><a href="./index.html">Welcome</a></li>
+                <li><a href="./adventure.html">Adventure</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li class="active"><a href="./sales.html">Bikes</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>The Mountain Spoke Bikes</h1>
+      
+
+        <section class="slideshow">
+             <div class="button-container">
+            <button onclick="prev()" class="slide-button">Prev</button>
+            <button onclick="next()" class="slide-button">Next</button>
+        </div>
+            <div id="0">
+
+                <div class="details">
+                    <h1>Giant</h1>
+                    <h2>XTC ADVANCED 27.5+ 1</h2>
+                    <h3>2018</h3>
+                    <h3>$3,825</h3>
+
+                </div>
+                <div class="details-image">
+                    <img src="images/giant_optimized.jpg" alt="Giant bike">
+                </div>
+
+            </div>
+            <div id="1">
+
+                <div class="details">
+                    <h1>Trek</h1>
+                    <h2>Top Fuel 9.9 SL</h2>
+                    <h3>2019</h3>
+                    <h3>$8,799</h3>
+
+                </div>
+                <div class="details-image">
+                    <img src="images/trek_optimized.jpeg" alt="Trek Bike">
+                </div>
+
+            </div>
+            <div id="2">
+                <div class="details">
+                    <h1>Specialized</h1>
+                    <h2>S-Works Enduro 27.5</h2>
+                    <h3>2018</h3>
+                    <h3>$8,500</h3>
+
+                </div>
+                <div class="details-image">
+                    <img src="images/specialized_optimized.png" alt="Specialized Bike">
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+    </main>
+    <footer class="grid-container"><a class="contact-info" href="./references.html">Resources</a><a class="contact-info" href="./video.html">Video</a></footer>
+    <script src="js/slideshow.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+
+</html>

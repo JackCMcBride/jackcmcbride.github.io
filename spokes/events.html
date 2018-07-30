@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Spoke Events">
+    <title>The Mountain Spoke - Events</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body class="sticky events black-back">
+    <header>
+        <nav>
+   <button onclick="toggleMenu()"><img src="./images/logo.png" alt="The Mountain Spoke"> Menu</button>            <ul id="nav" class="hide">
+                <li class="hide"><a href="./index.html"><img src="./images/logo.png" alt="The Mountain Spoke"></a></li>
+                <li class="show"><a href="./index.html">Welcome</a></li>
+                <li><a href="./adventure.html">Adventure</a></li>
+                <li class="active"><a href="./events.html">Events</a></li>
+                <li><a href="./sales.html">Bikes</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Events</h1>
+        <section class="event">
+            <h2>Cycle the Continental Divide</h2>
+            <div class="event-divider">
+                <div>
+                    <p>Join us for our annual Cycle the Continental Divide event for the cycle trip of a lifetime!</p>
+                    <p><span class="event-details">When:</span> September 27th</p>
+                    <p><span class="event-details">Where:</span> Glacial National Park</p>
+                    <p><span class="event-details">How:</span> $10 entry fee. Just bring your bike, water, and maybe some bear spray! Lunch will be provided.</p>
+                </div>
+                <div><img src="./images/event_optimized.jpg" alt="Mountain Bike in Forest"></div>
+            </div>
+
+
+
+
+
+            <form action="thanks.html">
+                <h1>Register for Cycle the Continental Divide</h1>
+
+                <fieldset>
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" required name="fullName" type="text" pattern="[a-zA-Z ]{5,}">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="email@example.com" name="email" type="email">
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" required name="phone" type="tel">
+                </fieldset>
+
+                <fieldset>
+                    <label for="from">Home state / country</label>
+                    <input id="from" required name="from" type="text">
+                </fieldset>
+
+                <fieldset>
+                    <label for="birthdate">Birth date</label>
+                    <input id="birthdate" name="birthdate" type="date">
+                </fieldset>
+
+
+
+                <fieldset>
+                    <label for="special">Special Accomodations</label>
+                    <textarea name="special" id="special" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+        <footer class="grid-container"><a class="contact-info" href="./references.html">Resources</a><a class="contact-info" href="./video.html">Video</a></footer>
+
+<script src="js/hamburger.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Spoke Contact Page">
+    <title>The Mountain Spoke - Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body class="sticky contact black-back">
+    <header>
+        <nav>
+            <button onclick="toggleMenu()"><img src="./images/logo.png" alt="The Mountain Spoke"> Menu</button>
+            <ul id="nav" class="hide">
+                <li class="hide"><a href="./index.html"><img src="./images/logo.png" alt="The Mountain Spoke"></a></li>
+                <li class="show"><a href="./index.html">Welcome</a></li>
+                <li><a href="./adventure.html">Adventure</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./sales.html">Bikes</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li class="active"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact us!</h1>
+
+
+        <div class="grid-container">
+            <form action="thanks.html">
+
+                <fieldset>
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" required name="fullName" type="text" pattern="[a-zA-Z ]{5,}">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="email@example.com" name="email" type="email">
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" required name="phone" type="tel">
+                </fieldset>
+
+
+
+                <fieldset>
+                    <label for="comments">Question/Comment</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+            <div class="map-container">
+
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441040569!2d-111.09291154929863!3d45.6722766274542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532748628431" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="grid-container">
+                    <div class="contact-info">949-555-5005</div>
+
+                    <div class="contact-info">
+                        <a href="">info@mountainspoke.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="grid-container"><a class="contact-info" href="./references.html">Resources</a><a class="contact-info" href="./video.html">Video</a></footer>
+    
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+</html>

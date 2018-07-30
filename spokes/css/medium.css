@@ -1,0 +1,82 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    nav button,
+    .show {
+        display: none;
+    }
+
+
+    .hide {
+        display: flex;
+    }
+
+    nav {
+        font-size: 12pt;
+
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        text-align: center;
+        flex: 1;
+
+    }
+
+    nav ul li a {
+
+        color: #FFF;
+        text-decoration: none;
+    }
+
+
+
+    .sales .adventure {
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .sales .adventure > div {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .adventure > div:nth-child(odd) > .details {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .adventure > div:nth-child(odd) > .details-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .sales .adventure .details {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        box-shadow: 5px 5px 20px gray;
+    }
+
+    .grid-container,
+    .event-divider {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+}
